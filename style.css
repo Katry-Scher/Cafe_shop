@@ -1,0 +1,22 @@
+@import url("css/index.css");
+
+
+
+:root {
+    
+    --cor-de-fundo: #FFFFFF;
+    --azul: #1d9bcf;
+    --preto:#000000;
+    --cinza:#e5e5e5;
+    --laranja:#ff4500;
+    --amarelo:#fac00d;
+    --fonte-h1:"Playfair Display", serif;
+    --fonte-txt: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-h1) var(--fonte-txt);    
+    font-size: 16px;
+    
+}
