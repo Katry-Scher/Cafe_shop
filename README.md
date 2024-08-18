@@ -2,6 +2,7 @@
 "Coffee and thinking space"
 
 🚧 Project Status: In development. New features coming soon! 🚧
+📲 Project MOBILE FIRST 
 
 
 
