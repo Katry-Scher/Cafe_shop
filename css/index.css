@@ -152,8 +152,7 @@
 
 .wrapper {
   display: inline-flex;
-  list-style: none;
-  height: ;
+  list-style: none;  
   width: 100%;
   font-family: "Poppins", sans-serif;
   justify-content: center;
@@ -236,6 +235,90 @@
   color: #fff;
 }
 
+/* LETTER WRAPPER */
+
+.wrapper_letter_trans {
+  margin: 1.5em 0;
+}
+
+.wrapper_letter {
+  min-height: 3rem;
+  min-width: 14rem;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0),
+  );
+  font-family: monospace;
+}
+
+.letter {
+  width: 1ch;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  left: 100%;
+  animation: scroll 4.4s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    left: -1ch;
+  }
+}
+
+.letter1 {
+  animation-delay: calc(2.5s / 10 * (10 - 1) * -1);
+}
+.letter2 {
+  animation-delay: calc(2.5s / 10 * (10 - 2) * -1);
+}
+.letter3 {
+  animation-delay: calc(2.5s / 10 * (10 - 3) * -1);
+}
+.letter4 {
+  animation-delay: calc(2.5s / 10 * (10 - 4) * -1);
+}
+.letter5 {
+  animation-delay: calc(2.5s / 10 * (10 - 5) * -1);
+}
+.letter6 {
+  animation-delay: calc(2.5s / 10 * (10 - 6) * -1);
+}
+.letter7 {
+  animation-delay: calc(2.5s / 10 * (10 - 7) * -1);
+}
+.letter8 {
+  animation-delay: calc(2.5s / 10 * (10 - 8) * -1);
+}
+.letter9 {
+  animation-delay: calc(2.5s / 10 * (10 - 9) * -1);
+}
+.letter10 {
+  animation-delay: calc(2.5s / 10 * (10 - 10) * -1);
+}
+
+.letter11 {
+  animation-delay: calc(2.5s / 10 * (10 - 11) * -1);
+}
+
+.letter12 {
+  animation-delay: calc(2.5s / 10 * (10 - 12) * -1);
+}
+
+.letter13 {
+  animation-delay: calc(2.5s / 10 * (10 - 13) * -1);
+}
+
+.letter14 {
+  animation-delay: calc(2.5s / 10 * (10 - 14) * -1);
+}
+
 
 
 
@@ -255,33 +338,32 @@
   font-family: var(--fonte-h1);
   font-weight: 700;
   margin-bottom: 1em;
-  
-
-
 }
 
 .plan-card {
-  background: #fff;
+  margin-top: 1.5em;
+  background: var(--cinza);
   width: 15rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
-  border-bottom: 4px solid #000446;
+  border-bottom: 4px solid var(--laranja);
   box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
   font-family: "Poppins", sans-serif;
 }
 
 .plan-card h2 {
   margin-bottom: 15px;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 600;
+  
 }
 
 .plan-card h2 span {
   display: block;
-  margin-top: -4px;
+  margin-top: 0.1em;
   color: #4d4d4d;
   font-size: 12px;
   font-weight: 400;
@@ -289,7 +371,7 @@
 
 .etiquet-price {
   position: relative;
-  background: #fdbd4a;
+  background: var(--amarelo);
   width: 14.46rem;
   margin-left: -0.65rem;
   padding: .2rem 1.2rem;
@@ -305,14 +387,14 @@
 }
 
 .etiquet-price p:before {
-  content: "$";
+  content: "£";
   margin-right: 5px;
   font-size: 15px;
   font-weight: 300;
 }
 
 .etiquet-price p:after {
-  content: "/ handle";
+  content: "/month";
   margin-left: 5px;
   font-size: 15px;
   font-weight: 300;
@@ -342,14 +424,14 @@
 .benefits-list ul li {
   color: #4d4d4d;
   list-style: none;
-  margin-bottom: .2rem;
+  margin-bottom: .3rem;
   display: flex;
-  align-items: center;
+  align-items:baseline;
   gap: .5rem;
 }
 
 .benefits-list ul li svg {
-  width: .9rem;
+  width: 1rem;
   fill: currentColor;
 }
 
@@ -367,7 +449,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000446;
+  background: var(--laranja);
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
@@ -388,3 +470,120 @@
   width: .9rem;
   fill: currentColor;
 }
+
+/* RESERVATION */
+
+
+.container_form {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #FCEDDA;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container_form .container_form_txt {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container_form .form-reservation {
+  margin-top: 15px;
+}
+
+.form-reservation .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+
+.form-reservation :where(.input-box input, .select-box) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #EE4E34;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #FCEDDA;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-reservation .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form-reservation .gender-box {
+  margin-top: 10px;
+}
+
+.form-reservation :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-reservation .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: #EE4E34;
+}
+
+.form-reservation :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #FCEDDA;
+}
+
+.form-reservation button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--laranja);
+}
+
+.form-reservation button:hover {
+  background: var(--azul);
+}
+
+/* FOOTER */

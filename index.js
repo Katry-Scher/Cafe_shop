@@ -44,4 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
   startAutoCycle();
 });
 
-/* PROMOTION*/
+
+
+
+
+
