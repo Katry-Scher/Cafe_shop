@@ -50,11 +50,12 @@
   font-size: 36px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s ease, font-size 0.3s ease;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: var(--amarelo);
+  font-size: 2.5em;
 }
 
 .overlay .closebtn {
@@ -63,10 +64,6 @@
   right: 45px;
   font-size: 60px;
 }
-
-
-
-
 
 .profile svg {  
   width: 2.5em;
@@ -105,6 +102,12 @@
 
 /* PROMOTION */
 
+.container_promotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tab {
   margin: 1.5em 0.2em;
   overflow: hidden;
@@ -134,16 +137,15 @@
 
 
 .tabcontent {
-  display: none;
+  display: flex;
   padding: 6px 12px;  
-  border-top: none;
+  border-top: none; 
 }
 
 .tabcontent img {
   height: 23em;
   border-radius: 25px;
   text-align: center;
-
 }
 
 .tablinks {
@@ -367,157 +369,20 @@
   animation-delay: calc(2.5s / 10 * (10 - 14) * -1);
 }
 
-
-
-
-/* PLAN CARD */
-
+/* CARD PROMO */
 
 .plan_card_container {
-  margin: 1.3em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} 
-
+  margin: 1.5em 1em;
+}
 
 .plan_card_container_txt h1 {
+  font-size: 2em;
   font-family: var(--fonte-h1);
   font-weight: 700;
+  text-align: center;
   margin-bottom: 1em;
 }
 
-.plan-card {
-  margin-top: 1.5em;
-  background: var(--cinza);
-  width: 15rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  border-bottom: 4px solid var(--laranja);
-  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
-  font-family: "Poppins", sans-serif;
-}
-
-.plan-card h2 {
-  margin-bottom: 15px;
-  font-size: 25px;
-  font-weight: 600;
-  
-}
-
-.plan-card h2 span {
-  display: block;
-  margin-top: 0.1em;
-  color: #4d4d4d;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.etiquet-price {
-  position: relative;
-  background: var(--amarelo);
-  width: 14.46rem;
-  margin-left: -0.65rem;
-  padding: .2rem 1.2rem;
-  border-radius: 5px 0 0 5px;
-}
-
-.etiquet-price p {
-  margin: 0;
-  padding-top: .4rem;
-  display: flex;
-  font-size: 1.9rem;
-  font-weight: 500;
-}
-
-.etiquet-price p:before {
-  content: "£";
-  margin-right: 5px;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.etiquet-price p:after {
-  content: "/month";
-  margin-left: 5px;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.etiquet-price div {
-  position: absolute;
-  bottom: -23px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid #c58102;
-  border-bottom: 10px solid transparent;
-  border-right: 13px solid transparent;
-  z-index: -6;
-}
-
-.benefits-list {
-  margin-top: 16px;
-}
-
-.benefits-list ul {
-  padding: 0;
-  font-size: 14px;
-}
-
-.benefits-list ul li {
-  color: #4d4d4d;
-  list-style: none;
-  margin-bottom: .3rem;
-  display: flex;
-  align-items:baseline;
-  gap: .5rem;
-}
-
-.benefits-list ul li svg {
-  width: 1rem;
-  fill: currentColor;
-}
-
-.benefits-list ul li span {
-  font-weight: 300;
-}
-
-.button-get-plan {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.2rem;
-}
-
-.button-get-plan a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--laranja);
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: .8rem;
-  letter-spacing: .05rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.button-get-plan a:hover {
-  transform: translateY(-3%);
-  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
-}
-
-.button-get-plan .svg-rocket {
-  margin-right: 10px;
-  width: .9rem;
-  fill: currentColor;
-}
 
 /* RESERVATION */
 
@@ -637,6 +502,7 @@
 
 /* GREETING*/
 
+
 .modal {
   display: none; /* Oculto por padrão */
   position: fixed; /* Fica em cima da tela */
@@ -678,13 +544,6 @@
   text-decoration: none;
 }
 
-.modal-content a:hover {
-  color: var(--laranja);
-  font-weight: 600;
-  transition: all 0.5s;
-  transform: translate(0, 0.4em);
-}
-
 .modal > p > b {
   font-weight: 700;
 }
@@ -703,3 +562,5 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+

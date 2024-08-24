@@ -1,0 +1,101 @@
+.container_form_contact {
+    margin: 2em 1.5em;
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: var(--preto);
+    border-radius: 20px;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    color: var(--laranja);
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+    font-family: var(--fonte-h1);
+    font-weight: 700;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    
+  }
+  
+  .input-field {
+    background: none;
+    border: 1px solid var(--laranja);
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+    color: var(--cor-de-fundo);
+    padding-inline: 1em;
+    padding: 0.3em 0;
+  }
+
+  .form-field > input {
+    padding-left: 1em;
+  }
+  
+  .sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--laranja);
+    font-weight: bold;
+    outline: 1px solid var(--laranja);
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: var(--laranja);
+    color: var(--cor-de-fundo);
+    cursor: pointer;    
+  }
+  
+  .form-card1 {
+    background-image: linear-gradient(163deg, var(--azul) 5%, var(--laranja) 95%);
+    border-radius: 22px;
+    transition: all 0.3s;
+  }
+  
+  .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px var(--cor-de-fundo);
+  }
+  
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+  
+  .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+
+  textarea::placeholder {
+    padding-left: 1em;
+  }
+  

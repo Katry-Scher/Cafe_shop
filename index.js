@@ -43,11 +43,3 @@ document.addEventListener("DOMContentLoaded", function() {
   cycleTabs(); // Chama a primeira vez para iniciar a exibição automática
   startAutoCycle();
 });
-
-
-
-
-
-
-
-
