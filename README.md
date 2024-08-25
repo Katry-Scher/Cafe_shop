@@ -1,5 +1,5 @@
 ☕ COFFEE IDEA 🌟 
-"Coffee and thinking space"
+
 
 🚧 Project Status: In development. New features coming soon! 🚧
 📲 Project MOBILE FIRST 
@@ -23,8 +23,6 @@ Reserve our rooms for meetings, breakfast events, or afternoon coffee for busine
 * Promotions:
 Stay updated with our exclusive promotions and take advantage of special offers.
 
-* Location:
-Easily find us and visit in person.
 
 🏢 Corporate Subscriptions:
 We offer subscription plans for companies that want to regularly use our space or receive high-quality coffee directly at their offices.
