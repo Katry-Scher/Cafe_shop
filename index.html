@@ -37,7 +37,7 @@
                   <a href="page_404.html">Delivery</a>
                   <a href="contact_page.html">Contact</a>
                   <a href="products.html">Products</a>
-                  <a href="#">Reservations</a>
+                  <a href="reservation.html">Reservations</a>
                   
                 </div>
             </div>
@@ -85,7 +85,7 @@
         </section>
 
         <section class="container_promotion">
-            <div class="tab">
+            <div class="tab_promo">
                 <button class="tablinks" onmouseover="openPromo(event, '30% off')">30% off</button>
 
                 <button class="tablinks" onmouseover="openPromo(event, 'Rewards')">Rewards</button>
@@ -332,7 +332,7 @@
 
         
         <section class="container_form">
-          <div class="container_form_txt">Registration form</div>
+          <div class="container_form_txt">Book your time</div>
           <form class="form-reservation" action="#">
               <div class="input-box">
                   <label>Full Name</label>
@@ -378,7 +378,7 @@
                       <option>Wimbledon</option>
                     </select>
                   </div>
-                <input required="" placeholder="How many guest? " type="text">
+                <input required="" placeholder="How many guest? " min=1 max=10 type="text">
                 </div>
               </div>
               <button>Submit</button>

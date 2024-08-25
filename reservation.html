@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+     <script src="index.js" defer></script>
+     <script src="header.js" defer></script>
+     <script src="footer.js" defer></script>
+     <script src="greeting.js" defer></script>
+     <script src="products.js" defer></script>
+     <script src="reservation.js" defer></script>
+
+    <!-- Bootstrap’s -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Animate style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>        
+        <section class="container_header">
+            
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="about_us.html">About Us</a>
+                  <a href="page_404.html">Delivery</a>
+                  <a href="contact_page.html">Contact</a>
+                  <a href="products.html">Products</a>
+                  <a href="reservation.html">Reservations</a>
+                  
+                </div>
+            </div>
+              
+            <span class="menu_icon" style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+
+            </span>
+
+            <div class="logo">
+                <a href="index.html"><img src="img/_logo.png" alt=""></a>
+            </div>
+            <div class="profile">
+                <a href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="reservation_txt">
+            <h1>Book Your Space With Us!</h1>
+            <p>Welcome to our booking page! We’re here to ensure that your experience with us is smooth and enjoyable. Please fill out the form below to make a reservation for your upcoming event or meeting.</p>
+
+            <p class="sign_in_txt">Sign in if you don't have account already!</p>
+
+            
+            <div class="button-borders">
+              <button class="primary-button"> Sign in
+              </button>
+            </div>
+
+        </section>
+
+        <section class="form_for_reservations">
+            <form id="regForm" action="/action_page.php">
+                <h1>Reservation:</h1>
+                
+                <div class="tab">Name:
+                  <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                  <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                </div>
+
+                <div class="tab">Company Name:
+                  <p><input placeholder="Company Name" oninput="this.className = ''" name="company" required></p>
+                  <p><input placeholder="Sector.." oninput="this.className = ''" name="sector" required></p>
+                </div>
+
+                <div class="tab">Contact Info:
+                  <p><input placeholder="Your e-mail..." oninput="this.className = ''" name="email" required></p>
+                  <p><input placeholder="Your phone..." oninput="this.className = ''" name="phone"required></p>
+                </div>
+
+                <div class="tab">Reservation Date:
+                    <label for="reservation-date"></label>
+                    <input type="date" id="reservation-date" name="reservation-date" required>
+                    <p id="date-error" style="color: red; display: none;">Please select a weekday (Monday to Friday).</p>
+                </div>
+
+                <div class="tab">Available Times:
+                    <label for="reservation-time"></label>
+                    <select id="reservation-time" name="reservation-time" required></select>
+                    <p id="time-error" style="color: red; display: none;">Please select a time between 8 AM and 6 PM.</p>
+                    
+                </div>
+
+                <div class="tab">Number of People:
+                  <select id="guest_number" name="num-people" oninput="this.className = ''" required>
+                    <option value="1_5">1 to 5</option>
+                    <option value="5_10">5 to 10</option>
+                    <option value="10_15">10 to 15</option>
+                    <option value="15_20">15 to 20</option>
+                  </select>
+                </div>
+
+                <div class="tab">Additional Information:
+                  <p>
+                    <label for="location">Location:</label>
+                    <select id="location" name="location" oninput="this.className = ''">
+                      <option value="Main Hall">Main Hall</option>
+                      <option value="Conference Room">Conference Room</option>
+                      <option value="Outdoor Area">Outdoor Area</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="cafe-break">Type of Coffee Break:</label>
+                    <select id="cafe-break" name="cafe-break" oninput="this.className = ''">
+                      <option value="Standard">Standard</option>
+                      <option value="Premium">Premium</option>
+                      <option value="Custom">Custom</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="equipment">Equipment Usage:</label>
+                    <select id="equipment" name="equipment" oninput="this.className = ''">
+                      <option value="None">None</option>
+                      <option value="Projector">Projector</option>
+                      <option value="Microphone">Microphone</option>
+                      <option value="Whiteboard">Whiteboard</option>
+                      <option value="All">All</option>
+                    </select>
+                  </p>
+                </div>
+                <div style="overflow:auto;">
+                  <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                  </div>
+                </div>
+
+                
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
