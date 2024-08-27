@@ -238,3 +238,28 @@
   right: 10px;
 }
 
+
+
+
+
+@media (min-width: 768px) {
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 765px; /* Limita a largura para dispositivos móveis */
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

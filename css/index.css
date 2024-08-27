@@ -108,6 +108,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .tab_promo {
@@ -143,7 +145,11 @@
   padding: 6px 12px;  
   border-top: none; 
 }
-
+.img_promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .tabcontent img {
   height: 23em;
   border-radius: 25px;
@@ -390,20 +396,27 @@
 
 
 .container_form {
-  position: relative;
-  max-width: 500px;
-  width: 100%;
-  background: #FCEDDA;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 2em 1em;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.container_form .container_form_txt {
-  font-size: 1.2rem;
-  color: #000;
-  font-weight: 600;
+.container_form_txt {
+  font-size: 2em;
+  color: var(--preto);
+  font-weight: 700;
   text-align: center;
+  font-family: var(--fonte-h1);
+  color: var(--cor-de-fundo);
+  
+}
+
+.container_form_box {
+  background-color: var(--amarelo);
+  padding: 1.5em;
+  border-radius: 25px;
 }
 
 .container_form .form-reservation {
@@ -416,12 +429,12 @@
 }
 
 .input-box label {
-  color: #000;
+  color: var(--preto);
 }
 
 .form-reservation :where(.input-box input, .select-box) {
   position: relative;
-  height: 35px;
+  height: 45px;
   width: 100%;
   outline: none;
   font-size: 1rem;
@@ -565,4 +578,62 @@
   cursor: pointer;
 }
 
+.hide-on-mobile {
+  display: none;
+  }
 
+  .hide-on-mobile img {
+    display: none;
+  
+  }
+
+
+@media (min-width: 768px) {
+
+    .hide-on-mobile {
+      display: block;
+      
+    }
+
+    .logo img {
+      height: 6em;
+    }
+
+    .tab_promo {
+      width: 87%;
+    }
+        
+    .tabcontent img {
+      display: inline-block;
+      max-width: 80%;
+      height: auto;
+      border-radius: 25px;
+      text-align: center;
+
+    }
+    
+    .plan_card_container_txt h1 {
+      font-size: 3em;
+      font-family: var(--fonte-h1);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

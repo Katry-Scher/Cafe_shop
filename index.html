@@ -88,9 +88,15 @@
             <div class="tab_promo">
                 <button class="tablinks" onmouseover="openPromo(event, '30% off')">30% off</button>
 
+                <button class="tablinks hide-on-mobile" onmouseover="openPromo(event, 'coworking')">CoWorking</button>
+
                 <button class="tablinks" onmouseover="openPromo(event, 'Rewards')">Rewards</button>
 
+                <button class="tablinks hide-on-mobile" onmouseover="openPromo(event, 'new_building')">New Building</button>
+
                 <button class="tablinks" onmouseover="openPromo(event, 'Oleato')">Introducing Oleato</button>
+                
+                <button class="tablinks hide-on-mobile" onmouseover="openPromo(event, 'call_now')">Call now</button>
 
                 <button class="tablinks" onmouseover="openPromo(event, 'Promo')">Promo</button>
             </div>
@@ -98,13 +104,25 @@
             <div id="30% off" class="tabcontent">
                 <img src="img/30_off.png" alt="">
             </div>
+
+            <div id="coworking" class="tabcontent hide-on-mobile">
+                <img src="img/5 - promo.png" alt="">
+            </div>
               
             <div id="Rewards" class="tabcontent">
                 <img src="img/rewards.png" alt="">
             </div>
+
+            <div id="new_building" class="tabcontent hide-on-mobile">
+                <img src="img/6 - promo.png" alt="">
+            </div>
               
             <div id="Oleato" class="tabcontent">
                 <img src="img/oleato.png" alt="">
+            </div>
+
+            <div id="call_now" class="tabcontent hide-on-mobile">
+                <img src="img/7 - promo.png" alt="">
             </div>
 
             <div id="Promo" class="tabcontent">
@@ -332,57 +350,61 @@
 
         
         <section class="container_form">
-          <div class="container_form_txt">Book your time</div>
-          <form class="form-reservation" action="#">
-              <div class="input-box">
-                  <label>Full Name</label>
-                  <input required="" placeholder="Enter full name" type="text">
-              </div>
-              <div class="column">
-                  <div class="input-box">
-                    <label>Phone Number</label>
-                    <input required="" placeholder="Enter phone number" type="telephone">
-                  </div>
-                  <div class="input-box">
-                    <label>Reservation Date</label>
-                    <input required="" placeholder="Enter date" type="date">
-                  </div>
-              </div>
-              <div class="gender-box">
-                <label>Time</label>
-                <div class="gender-option">
-                  <div class="gender">
-                    <input checked="" name="gender" id="check-male" type="radio">
-                    <label for="check-male">Morning</label>
-                  </div>
-                  <div class="gender">
-                    <input name="gender" id="check-female" type="radio">
-                    <label for="check-female">Evening </label>
-                  </div>
-                  <div class="gender">
-                    <input name="gender" id="check-other" type="radio">
-                    <label for="check-other">Night</label>
-                  </div>
-                </div>
-              </div>
-              <div class="input-box address">
-                <label>Company name's</label>
-                <input required="" placeholder="Enter your Company's name" type="text">
-                <div class="column">
-                  <div class="select-box">
-                    <select>
-                      <option hidden="">Coffee Shop</option>
-                      <option>Wembley</option>
-                      <option>Baker Street</option>
-                      <option>Soho</option>
-                      <option>Wimbledon</option>
-                    </select>
-                  </div>
-                <input required="" placeholder="How many guest? " min=1 max=10 type="text">
-                </div>
-              </div>
-              <button>Submit</button>
-          </form>
+
+            <div class="container_form_box">
+                <div class="container_form_txt">Book your time</div>
+                <form class="form-reservation" action="#">
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input required="" placeholder="Enter full name" type="text">
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input required="" placeholder="Enter phone number" type="telephone">
+                        </div>
+                        <div class="input-box">
+                            <label>Reservation Date</label>
+                            <input required="" placeholder="Enter date" type="date">
+                        </div>
+                    </div>
+                    <div class="gender-box">
+                        <label>Time</label>
+                        <div class="gender-option">
+                        <div class="gender">
+                            <input checked="" name="gender" id="check-male" type="radio">
+                            <label for="check-male">Morning</label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" id="check-female" type="radio">
+                            <label for="check-female">Evening </label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" id="check-other" type="radio">
+                            <label for="check-other">Night</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-box address">
+                        <label>Company name's</label>
+                        <input required="" placeholder="Enter your Company's name" type="text">
+                        <div class="column">
+                        <div class="select-box">
+                            <select>
+                            <option hidden="">Coffee Shop</option>
+                            <option>Wembley</option>
+                            <option>Baker Street</option>
+                            <option>Soho</option>
+                            <option>Wimbledon</option>
+                            </select>
+                        </div>
+                        <input required="" placeholder="How many guest? " min=1 max=10 type="text">
+                        </div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+
+            </div>
         </section>
         
     </main>

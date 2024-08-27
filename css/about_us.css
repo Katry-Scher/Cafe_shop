@@ -10,12 +10,6 @@
     margin-bottom: 1.5em;
 }
 
-.container_about_us_txt h1 {
-    font-family: var(--fonte-h1);
-    font-weight: 700;
-    margin-bottom: 0.5em;
-}
-
 .container_about_us_txt p {
     text-align: justify;
 }
@@ -97,3 +91,20 @@
     transform: rotateY(180deg);
   }
   
+
+
+  @media (min-width: 768px) {
+
+    .container_about_us_photos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    .container_about_us_h1 {
+      font-family: var(--fonte-h1);
+      font-weight: 700;
+      margin-bottom: 2em;
+    }
+  }
