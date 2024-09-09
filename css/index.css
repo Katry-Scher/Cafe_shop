@@ -620,7 +620,11 @@
       margin-bottom: 1em;
     }
 
-    
+    @media (min-width:1200px) {
+      
+
+
+    }
 
     
 

@@ -244,14 +244,40 @@
 
 @media (min-width: 768px) {
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  max-width: 765px; /* Limita a largura para dispositivos móveis */
-  margin: 0 auto;
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 765px; /* Limita a largura para dispositivos móveis */
+    margin: 0 auto;
+  }
+
+.products_list {
+  gap: 20px; /* Maior espaço entre os itens */
+  justify-content: space-between; /* Espaço entre os itens */
+  margin: 0 1em;
 }
 
+.card_product {
+  width: 30%; /* 3 itens por linha */
+  max-width: none; /* Remove o limite de largura */
+}
+
+.image { 
+  padding-top: 2em;
+  width: 85%;
+}
+
+.separador_txt {
+  margin: 2em 0;
+}
+
+.products_list_tablet {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
 
 
 
